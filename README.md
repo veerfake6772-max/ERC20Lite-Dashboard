@@ -1,13 +1,22 @@
-# Sample Hardhat Project
+Setup
+npm install
+cd frontend
+npm install
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
-
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
+Run Hardhat
 npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.js
-```
+
+Deploy Token Locally
+npx hardhat run scripts/deploy.js --network localhost
+
+Start Frontend
+cd frontend
+npm run dev
+
+
+The project includes a special Switch Wallet button using:
+wallet_requestPermissions
+
+This forces MetaMask to refresh permission for eth_accounts and ensures correct wallet switching even on Hardhat localhost networks.
+
+This solves the issue where MetaMask would otherwise keep returning the old approved account.
