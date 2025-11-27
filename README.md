@@ -1,4 +1,4 @@
-**Setup**
+Setup:- 
 
 npm install
 
@@ -8,19 +8,19 @@ npm install
 
 ***
 
-Run Hardhat
+Run Hardhat:-
 
 npx hardhat node
 
 ***
 
-Deploy Token Locally
+Deploy Token Locally:-
 
 npx hardhat run scripts/deploy.js --network localhost
 
 ***
 
-Start Frontend
+Start Frontend:-
 
 cd frontend
 
