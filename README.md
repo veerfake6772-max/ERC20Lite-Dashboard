@@ -1,17 +1,32 @@
-Setup
+**Setup**
+
 npm install
+
 cd frontend
+
 npm install
+
+***
 
 Run Hardhat
+
 npx hardhat node
 
+***
+
 Deploy Token Locally
+
 npx hardhat run scripts/deploy.js --network localhost
 
+***
+
 Start Frontend
+
 cd frontend
+
 npm run dev
+
+***
 
 
 The project includes a special Switch Wallet button using:
